@@ -69,7 +69,7 @@ function validateSignUpForm(event) {
 
 
   if (password !== confirmPassword) {
-    confirmPasswordError.textContent = 'password does not mat';
+    confirmPasswordError.textContent = 'password does not match';
     return; 
   }
   

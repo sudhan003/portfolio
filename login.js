@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function navigateToHome() {
-  window.location.href = "../home/home.html";
+  window.location.href = "home.html";
 }
 var nameInput = document.querySelector("#name");
 var emailInput = document.querySelector("#email");

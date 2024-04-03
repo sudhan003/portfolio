@@ -1,7 +1,7 @@
 document.querySelector(".gameButton").addEventListener("click", guessNumber);
 
 function guessNumber() {
-  window.location.href = "game/game.html";
+  window.location.href = "game.html";
 }
 let currentClass = ".profile";
 

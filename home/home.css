@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(
+    to right,
+    #1aebb6,
+    #44d8b6,
+    #62cab2,
+    #77d4bd,
+    #8de2ce,
+    #d2ebe5
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 28px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+img {
+  max-width: 30%;
+  height: auto;
+}
+
+.profile-details {
+  width: 40%;
+}
+
+.name {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #1aebb6,
+    #1aebb6,
+    rgb(53, 156, 235),
+    #a0d6e8
+  );
+  background-size: 400% auto; /* Important for animation */
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari and older Chrome versions */
+  color: transparent;
+
+  animation: gradientAnimation 2000ms linear infinite alternate; /* Animation properties */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Initial background position */
+  }
+  100% {
+    background-position: 100% 50%; /* Final background position */
+  }
+}
+
+p {
+  font-size: 20px;
+}
+.arrow-animation {
+  height: 10%;
+  width: 20%;
+  transform: rotate(-90deg);
+}
+
+nav {
+  right: 0px;
+  top: 5%;
+  width: fit-content;
+  position: absolute;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gameButton {
+  color: white;
+  padding: 12px 12px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: #1aebb6;
+  border-radius: 8px;
+}
+
+.button {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.button:hover {
+  color: #1aebb6;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 3px;
+  cursor: pointer;
+}
+
+.gameButton:hover {
+  background-color: #0fdaa7;
+}
+
+/* contact me */
+
+.contact-me {
+  display: flex;
+  gap: 40px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contact-me form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+
+  /* background-color: #a0d6e8; */
+}
+.contact-me form p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+input {
+  outline: none;
+  padding: 12px 12px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+input:focus {
+  border: 1px solid #0fdaa7;
+}
+textarea {
+  width: 300px;
+  padding: 12px 12px;
+  border-radius: 8px;
+}
+textarea:focus {
+  outline-color: #0fdaa7;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* social media */
+.social-media {
+  width: 300px;
+ padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+ row-gap: 40px;
+ position: relative;
+
+  /* background-color: whitesmoke;
+  border-radius: 8px; */
+  /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.social-media section{
+  bottom: 2px;
+  left: 25px;
+  right: 25px;
+    display: flex;
+  gap: 20px;
+ position: absolute;
+}
+.social-media .iconButton {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.social-media div{
+  display: flex;
+  flex-direction: column;
+}
+.social-media div h4{
+  font-size: 20px;
+  font-weight: 550;
+}
+.social-media div p{
+  font-size: 18px;
+}

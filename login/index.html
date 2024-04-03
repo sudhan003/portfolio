@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SRB PortFolio</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="primary-section"></div>
+      <div class="white-section"></div>
+    </div>
+    <div class="login-container">
+      <section class="design"><img src="logo.png" alt="" /></section>
+      <section class="userInput">
+        <h1>Sign up</h1>
+        
+          <div class="name">
+            <p class="title" for="name">Name</p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="eg.joe"
+              required
+            /><span id="nameError" class="error"></span>
+          </div>
+          <div class="email">
+            <p class="title" for="email">Email</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="joe@gmail.com"
+              required
+            /><span id="emailError" class="error"></span>
+          </div>
+          <div class="password">
+            <p class="title" for="password">Password</p>
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="password"
+              required
+            />
+            <img src="visibility.svg" alt="" class="visibility" /><span id="passwordError" class="error"></span>
+          </div>
+          <div class="confirm-password">
+            <p class="title" for="confirm password">Confirm Password</p>
+            <input
+              type="password"
+              name=""
+              id="confirm-password"
+              placeholder="confirm password"
+              required
+            />
+            <img src="visibility.svg" alt="" class="visibility" />
+            <span id="confirmPasswordError" class="error"></span>
+          </div>
+          <div class="forgot-password"><p>forgot password?</p></div>
+          <button type="submit" class="loginButton">Sign up</button>
+          
+        
+        <p class="authNav">Already have an account? <span>Login</span></p>
+      </section>
+    </div>
+    <div id="snackbar">User not exist, please Sign up</div>
+    <script src="login.js"></script>
+  </body>
+</html>

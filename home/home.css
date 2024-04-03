@@ -73,20 +73,20 @@ img {
     rgb(53, 156, 235),
     #a0d6e8
   );
-  background-size: 400% auto; /* Important for animation */
+  background-size: 400% auto; 
   background-clip: text;
-  -webkit-background-clip: text; /* Safari and older Chrome versions */
+  -webkit-background-clip: text; 
   color: transparent;
 
-  animation: gradientAnimation 2000ms linear infinite alternate; /* Animation properties */
+  animation: gradientAnimation 2000ms linear infinite alternate; 
 }
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% 50%; /* Initial background position */
+    background-position: 0% 50%; 
   }
   100% {
-    background-position: 100% 50%; /* Final background position */
+    background-position: 100% 50%; 
   }
 }
 
@@ -110,6 +110,7 @@ nav {
   align-items: center;
 }
 
+
 .gameButton {
   color: white;
   padding: 12px 12px;
@@ -121,7 +122,7 @@ nav {
 }
 
 .button {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 550;
 }
 
@@ -196,9 +197,7 @@ textarea::placeholder {
  row-gap: 40px;
  position: relative;
 
-  /* background-color: whitesmoke;
-  border-radius: 8px; */
-  /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3); */
+
 }
 
 .social-media section{

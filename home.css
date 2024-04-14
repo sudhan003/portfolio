@@ -62,7 +62,7 @@ img {
 }
 
 .name {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 700;
   letter-spacing: 3px;
   font-family: sans-serif;
@@ -73,20 +73,20 @@ img {
     rgb(53, 156, 235),
     #a0d6e8
   );
-  background-size: 400% auto; 
+  background-size: 400% auto;
   background-clip: text;
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
   color: transparent;
 
-  animation: gradientAnimation 2000ms linear infinite alternate; 
+  animation: gradientAnimation 2000ms linear infinite alternate;
 }
 
 @keyframes gradientAnimation {
   0% {
-    background-position: 0% 50%; 
+    background-position: 0% 50%;
   }
   100% {
-    background-position: 100% 50%; 
+    background-position: 100% 50%;
   }
 }
 
@@ -109,7 +109,6 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-
 
 .gameButton {
   color: white;
@@ -138,6 +137,93 @@ nav {
   background-color: #0fdaa7;
 }
 
+.profile-details .downloadButton {
+  margin-top: 10px;
+  color: white;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background-color: rgba(53, 156, 235, 0.795);
+  border-radius: 8px;
+}
+
+.profile-details .downloadButton:hover {
+  background-color: rgb(53, 156, 235);
+}
+
+/* Projects */
+
+.project-card {
+height: 300px;
+  width: 300px;
+ background-color: gainsboro;
+ overflow: hidden;
+ border-radius: 12px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.projectImage {
+  max-width: 100%;
+  max-height: 60%;
+}
+
+.projectTitle{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.projectDescription{
+  font-size: 15px;
+
+  padding: 10px;
+  text-align: center;
+}
+
+
+.project-card .projectButton {
+
+  color: white;
+  padding: 5px 8px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  background-color: #44d8b6;
+  border-radius: 8px;
+}
+
+.project-card .projectButton:hover {
+  background-color: #0fdaa7;
+}
+
+
+.project-page{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-page > :first-child{
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.projects-row{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+/* .project-card .projectImage {
+ height: 200px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  
+} */
 /* contact me */
 
 .contact-me {
@@ -155,8 +241,6 @@ nav {
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
-
-  /* background-color: #a0d6e8; */
 }
 .contact-me form p {
   font-size: 20px;
@@ -179,7 +263,6 @@ textarea {
 }
 textarea:focus {
   outline-color: #0fdaa7;
-
 }
 
 input::placeholder,
@@ -191,22 +274,20 @@ textarea::placeholder {
 /* social media */
 .social-media {
   width: 300px;
- padding-top: 45px;
+  padding-top: 45px;
   display: flex;
   flex-direction: column;
- row-gap: 40px;
- position: relative;
-
-
+  row-gap: 40px;
+  position: relative;
 }
 
-.social-media section{
+.social-media section {
   bottom: 2px;
   left: 25px;
   right: 25px;
-    display: flex;
+  display: flex;
   gap: 20px;
- position: absolute;
+  position: absolute;
 }
 .social-media .iconButton {
   height: 60px;
@@ -221,15 +302,15 @@ textarea::placeholder {
   position: relative;
 }
 
-
-.social-media div{
+.social-media div {
   display: flex;
   flex-direction: column;
 }
-.social-media div h4{
+.social-media div h4 {
   font-size: 20px;
   font-weight: 550;
 }
-.social-media div p{
+.social-media div p {
   font-size: 18px;
 }
+

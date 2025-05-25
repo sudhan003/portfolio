@@ -93,5 +93,5 @@ document.querySelector(".project").addEventListener("click", function () {
 document
   .querySelector(".downloadButton")
   .addEventListener("click", function () {
-    window.open("assets/Resume_Sudhan_Raj_Babu_A.pdf", "_blank");
+    window.open("https://shorturl.at/9HgU6", "_blank");
   });
